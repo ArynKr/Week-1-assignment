@@ -8,5 +8,23 @@ Hint - use Date class exposed in JS
 */
 
 function calculateTime(n) {
-    return 0.01;
+  const start = new Date()
+  let sum = 0
+  for (let i = 1; i <= n; i++) {
+    sum += i
+  }
+  const end = new Date()
+  console.log(
+    `Time taken to calculate sum from 1 to ${n} is ${end - start} milliseconds`
+  )
 }
+
+calculateTime(100)
+calculateTime(1000)
+calculateTime(10000)
+calculateTime(100000)
+calculateTime(1000000)
+calculateTime(10000000)
+calculateTime(100000000)
+calculateTime(1000000000)
+calculateTime(10000000000)
